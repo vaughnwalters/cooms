@@ -1,8 +1,8 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/admin-header.php" ?>
 
     <div id="wrapper">
 
-    <?php include "includes/navigation.php" ?>
+    <?php include "includes/admin-navigation.php" ?>
 
     <div id="page-wrapper">
 
@@ -15,7 +15,6 @@
                         Welcome to Admin
                         <small>Author</small>
                     </h1>
-                    </ol>
                 </div>
             </div>
             <!-- /.row -->
@@ -26,5 +25,5 @@
     </div>
     <!-- /#page-wrapper -->
 
-<?php include "includes/footer.php" ?>
+<?php include "includes/admin-footer.php" ?>
 
