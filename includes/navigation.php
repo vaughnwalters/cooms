@@ -28,6 +28,8 @@
 
                 ?>
 
+                <li><a href="admin"</a>Admin</li>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
