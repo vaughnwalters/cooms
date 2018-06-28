@@ -67,16 +67,6 @@
 
                     <div class="col-xs-6">
 
-
-                        <?php
-
-                        $query = "SELECT * FROM categories";
-                        $select_categories = mysqli_query($connection, $query);
-
-
-                        ?>
-
-
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
@@ -89,7 +79,10 @@
 
 
 
-                            <?php
+                            <?php // FIND ALL CATEGORIES QUERY
+
+                            $query = "SELECT * FROM categories";
+                            $select_categories = mysqli_query($connection, $query);
 
                             while($row = mysqli_fetch_assoc($select_categories)) {
                                 $cat_id = $row['cat_id'];
@@ -97,10 +90,21 @@
                                 echo "<tr>";
                                 echo "<td>{$cat_id}</td>";
                                 echo "<td>{$cat_title}</td>";
+                                echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
                                 echo "</tr>";
 
                             }
 
+                            ?>
+
+                            <?php // DELETE QUERY
+                                if(isset($_GET['delete'])) {
+                                    $the_cat_id = $_GET['delete'];
+                                    $query = "DELETE FROM categories WHERE cat_id = {$the_cat_id}";
+                                    $delete_query = mysqli_query($connection, $query);
+//                                  this header function will refresh the page
+                                    header("Location: categories.php");
+                                }
 
                             ?>
 
