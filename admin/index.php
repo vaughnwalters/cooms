@@ -1,8 +1,8 @@
-<?php include "includes/admin-header.php" ?>
+<?php include "includes/admin_header.php" ?>
 
     <div id="wrapper">
 
-    <?php include "includes/admin-navigation.php" ?>
+    <?php include "includes/admin_navigation.php" ?>
 
     <div id="page-wrapper">
 
@@ -25,5 +25,5 @@
     </div>
     <!-- /#page-wrapper -->
 
-<?php include "includes/admin-footer.php" ?>
+<?php include "includes/admin_footer.php" ?>
 
