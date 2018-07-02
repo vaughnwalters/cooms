@@ -16,54 +16,38 @@
                         <small>Author</small>
                     </h1>
 
-                    <div class="col-xs-6">
 
-                        <?php insert_categories() ?>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Image</th>
+                            <th>Tags</th>
+                            <th>Comments</th>
+                            <th>Date</th>
+                        </tr>
+                        </thead>
 
-                        <form action="" method="post">
-
-                            <div class="form-group">
-                                <label for="cat_title">Add Category</label>
-                                <input type="text" class="form-control" name="cat_title">
-                            </div>
-
-                            <div class="form-group">
-                                <input class="btn btn-primary" type="submit" name="submit" value ="Add Category">
-                            </div>
-
-                        </form>
-
-                    <?php //UPDATE AND INCLUDE QUERY
-
-                    if(isset($_GET['edit'])) {
-                        $cat_id = $_GET['edit'];
-
-                        include "includes/update_categories.php";
-                    }
-
-                    ?>
-
-                    </div><!-- Add Category Form -->
-
-                    <div class="col-xs-6">
-
-                        <table class="table table-bordered table-hover">
-                            <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Category Title</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            <?php findAllCategories(); ?>
-
-                            <?php delete_categories(); ?>
-
-                            </tbody>
+                        <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>VDUBZ</td>
+                            <td>bootstrap framework</td>
+                            <td>bootstrap</td>
+                            <td>status</td>
+                            <td>Image</td>
+                            <td>tags</td>
+                            <td>comments</td>
+                            <td>date</td>
+                        </tr>
                         </table>
-                        
-                    </div>
+                    </tbody>
+
+
 
                 </div>
             </div>
