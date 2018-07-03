@@ -18,6 +18,17 @@ if(isset($_POST['create_post'])) {
 //    this will take the image that is placed into the server temporarily when a file is selected, and move it into the database on submit
     move_uploaded_file($post_image_temp, "../images/$post_image");
 
+//    this is the query to insert the post from the form into the DB
+    $query = "INSERT INTO posts(post_category_id,post_title,post_author,post_date, post_image,post_content,post_tags,post_comment_count,post_status) ";
+
+//    for any of these values that are strings going into the DB, must use quotes around the value.  $post_category_id, for example though, is a number and does not need quote
+$query .= "VALUES({$post_category_id},'{$post_title}','{$post_author}',now(), '{$post_image}','{$post_content}','{$post_tags}','{$post_comment_count}','{$post_status}')";
+
+
+$create_post_query = mysqli_query($connection, $query);
+
+confirmQuery($create_post_query);
+
 }
 
 
