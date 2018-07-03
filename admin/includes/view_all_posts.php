@@ -53,23 +53,8 @@
 
     ?>
 
-
-
-
-
-
-
-    <td>10</td>
-    <td>VDUBZ</td>
-    <td>bootstrap framework</td>
-    <td>bootstrap</td>
-    <td>status</td>
-    <td>Image</td>
-    <td>tags</td>
-    <td>comments</td>
-    <td>date</td>
+    </tbody>
 </table>
-</tbody>
 
 <?php
 
