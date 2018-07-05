@@ -22,6 +22,12 @@ while($row = mysqli_fetch_assoc($select_posts_by_id)) {
     $post_comment_count = $row['post_comment_count'];
     $post_date = $row['post_date'];
 
+//    on button click, test to make sure update button is working
+//    if(isset($_POST['update_post'])) {
+//        echo "SUP";
+//    }
+
+
 }
 
 //grabbing all values from $_POST superglobal
@@ -56,7 +62,8 @@ if(isset($_POST['update_post'])) {
     $query .= "post_author = '{$post_author}', ";
     $query .= "post_status = '{$post_status}', ";
     $query .= "post_tags   = '{$post_tags}', ";
-    $query .= "post_content  = '{$post_content}' ";
+    $query .= "post_content  = '{$post_content}', ";
+    $query .= "post_image = '{$post_image}' ";
     $query .= "WHERE post_id = {$the_post_id} ";
 
     $update_post = mysqli_query($connection, $query);
