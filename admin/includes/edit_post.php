@@ -34,7 +34,7 @@ while($row = mysqli_fetch_assoc($select_posts_by_id)) {
 if(isset($_POST['update_post'])) {
     $post_author = $_POST['author'];
     $post_title = $_POST['title'];
-    $post_category = $_POST['post_category'];
+    $post_category_id = $_POST['post_category_id'];
     $post_status = $_POST['post_status'];
     $post_image = $_FILES['image']['name'];
     $post_image_temp = $_FILES['image']['tmp_name'];
@@ -88,7 +88,7 @@ if(isset($_POST['update_post'])) {
 
 
     <div class="form-group">
-        <select name="post_category" id="">
+        <select name="post_category_id" id="">
 
             <?php
 
