@@ -84,7 +84,7 @@
                 $comment_email = $_POST['comment_email'];
                 $comment_content = $_POST['comment_content'];
 
-                $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date)";
+                $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date) ";
 
                 $query .= "VALUES ($the_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'unapproved', now())";
 
@@ -93,6 +93,14 @@
                 if(!$create_comment_query) {
                     die('QUERY FAILED' . mysqli_error($connection));
                 }
+
+                $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 ";
+                $query .= "WHERE post_id={$the_post_id} ";
+
+                $update_comment_count = mysqli_query($connection, $query);
+
+
+
 
             }
 
@@ -133,6 +141,8 @@
             <!-- Posted Comments -->
             <?php
 
+
+//            hmm, make this global or scoped to this page?  or just redefine it?
             $the_post_id = $_GET['p_id'];
 
             $query = "SELECT * FROM comments WHERE comment_post_id = {$the_post_id} ";
