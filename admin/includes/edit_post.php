@@ -66,6 +66,31 @@ if(isset($_POST['update_post'])) {
     $query .= "post_image = '{$post_image}' ";
     $query .= "WHERE post_id = {$the_post_id} ";
 
+
+
+
+
+
+
+
+
+
+//HMMMMM, maybe take this out if something breaks
+    if(empty($post_image)) {
+        $query = "SELECT * FROM posts WHERE post_id = $the_post_id ";
+        $select_post_image = mysqli_query($connection,$query);
+    }
+
+
+
+
+
+
+
+
+
+
+
     $update_post = mysqli_query($connection, $query);
 
     confirmQuery($update_post);
@@ -84,9 +109,6 @@ if(isset($_POST['update_post'])) {
         <input value="<?php echo $post_title; ?>" type="text" class="form-control" name="title">
     </div>
 
-
-
-
     <div class="form-group">
         <select name="post_category_id" id="">
 
@@ -103,23 +125,12 @@ if(isset($_POST['update_post'])) {
 
                 echo "<option value='{$cat_id}'>{$cat_title}</option>";
 
-
             }
-
-
 
             ?>
         </select>
 
     </div>
-
-
-
-
-
-
-
-
 
     <div class="form-group">
         <label for="title">Post Author</label>
