@@ -66,7 +66,7 @@
 
 
 
-
+<!--            mysqli_real_escape_string($connection, trim($string));-->
 
             <!-- Blog Comments -->
 
@@ -83,6 +83,14 @@
                 $comment_email = $_POST['comment_email'];
                 $comment_content = $_POST['comment_content'];
 
+                $the_post_id = mysqli_real_escape_string($connection, trim($_GET['p_id']));
+
+                $comment_author = mysqli_real_escape_string($connection, trim($_POST['comment_author']));
+                $comment_email = mysqli_real_escape_string($connection, trim($_POST['comment_email']));
+                $comment_content = mysqli_real_escape_string($connection, trim($_POST['comment_content']));
+
+
+
                 $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date) ";
 
                 $query .= "VALUES ($the_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'unapproved', now())";
@@ -92,8 +100,8 @@
                 if(!$create_comment_query) {
                     die('QUERY FAILED' . mysqli_error($connection));
                 } else {
-                    echo "<p>Comment Received.  I'll have to approve it before it shows up here.</p>";
-                    echo "<p>'Only God Can Judge Me' - Tupac</p>";
+                    echo "Comment Received.  I'll have to approve it before it shows up here.";
+                    echo "'Only God Can Judge Me' - Tupac";
                 }
 
                 $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 ";
