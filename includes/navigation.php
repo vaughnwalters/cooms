@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">COOMS</a>
+            <a class="navbar-brand" href="index.php">VW</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -21,12 +21,84 @@
 
                 while($row = mysqli_fetch_assoc($select_all_categories_query)) {
                     $cat_title = $row['cat_title'];
+                    $cat_id = $row['cat_id'];
 
-                    echo "<li><a href='#'>{$cat_title}</a></li>";
+                    echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
 
                 }
 
                 ?>
+
+
+
+
+
+
+<!---->
+<!--                --><?php
+//
+//                $query = "SELECT * FROM categories";
+//                $select_categories_sidebar = mysqli_query($connection, $query);
+//
+//
+//                ?>
+<!---->
+<!--                <div class="well">-->
+<!--                    <h4>Blog Categories</h4>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-lg-12">-->
+<!--                            <ul class="list-unstyled">-->
+<!---->
+<!--                                --><?php
+//
+//                                while($row = mysqli_fetch_assoc($select_categories_sidebar)) {
+//                                    $cat_title = $row['cat_title'];
+//                                    $cat_id = $row['cat_id'];
+//
+//                                    echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
+//
+//                                }
+//
+//
+//                                ?>
+<!---->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <!-- /.col-lg-12 -->-->
+<!--                    </div>-->
+<!--                    <!-- /.row -->-->
+<!--                </div>-->
+<!--                -->
+<!--                -->
+<!--                -->
+<!--                -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <?php

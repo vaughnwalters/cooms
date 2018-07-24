@@ -41,10 +41,10 @@
 
 
 
-                    <h1 class="page-header">
-                        Page Heading
-                        <small>Secondary Text</small>
-                    </h1>
+<!--                    <h1 class="page-header">-->
+<!--                        Page Heading-->
+<!--                        <small>Secondary Text</small>-->
+<!--                    </h1>-->
 
                     <!-- First Blog Post -->
                     <h2>
@@ -56,6 +56,7 @@
                     <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date ?></p>
                     <hr>
                     <a href="post.php?p_id=<?php echo $post_id; ?>">
+
                         <img class="img-responsive" src="images/<?php echo $post_image ?>" alt="">
                     </a>
                     <hr>
