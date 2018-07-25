@@ -27,7 +27,7 @@
 
 
 
-            $query = "SELECT * FROM posts WHERE post_author = '{$the_author_name}' " ;
+            $query = "SELECT * FROM posts WHERE post_author = '{$the_author_name}' ORDER BY post_id DESC " ;
 
             $select_all_posts_query = mysqli_query($connection, $query);
 

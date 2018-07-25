@@ -25,7 +25,7 @@
 
 
 
-//                TODO - FLESH THIS OUT MORE, maybe base it on the switch statement in posts.php
+//                TODO - FLESH THIS OUT MORE to customize content at top of each category page, maybe base it on the switch statement in posts.php
                 if($post_category_id == 0) {
                     echo "DEV";
                 } elseif ( $post_category_id == 1 ) {
@@ -40,7 +40,7 @@
 
 
 
-                $query = "SELECT * FROM posts WHERE post_category_id = {$post_category_id}";
+                $query = "SELECT * FROM posts WHERE post_category_id = {$post_category_id} ORDER BY post_id DESC";
 
                 $select_all_posts_query = mysqli_query($connection, $query);
 

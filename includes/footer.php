@@ -1,7 +1,13 @@
 <footer>
     <div class="row">
         <div class="col-lg-12">
-            <p>&copy; Vaughn Walters <?php echo date("Y"); ?></p>
+            <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> <?php echo date("Y"); ?></p>
+
+
+
+
+
+
         </div>
         <!-- /.col-lg-12 -->
     </div>
