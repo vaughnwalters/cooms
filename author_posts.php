@@ -24,8 +24,11 @@
 
 
             }
-
-
+            ?>
+                <h1 class="page-header">
+                    Here are all the posts by <?php echo $the_author_name ?>
+                </h1>
+            <?php
 
             $query = "SELECT * FROM posts WHERE post_author = '{$the_author_name}' ORDER BY post_id DESC " ;
 
@@ -43,9 +46,6 @@
 
 
 
-                <h1 class="page-header">
-                    Here are all the posts by <?php echo $post_author ?>
-                </h1>
 
                 <!-- First Blog Post -->
                 <h2>

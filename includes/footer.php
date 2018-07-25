@@ -3,6 +3,8 @@
         <div class="col-lg-12">
             <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> <?php echo date("Y"); ?></p>
 
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
 
 
 
