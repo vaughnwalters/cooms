@@ -1,8 +1,10 @@
-<footer>
+<footer class="col-md-8">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-6">
             <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> ® <?php echo date("Y"); ?> ™</p>
+        </div>
 
+        <div class="col-sm-6">
 
             <a href="https://github.com/vaughnwalters"><i class="fa fa-github"> </i></a>
 
@@ -29,6 +31,8 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="/js/background.js"></script>
 
 </body>
 
