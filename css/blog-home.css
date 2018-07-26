@@ -22,3 +22,7 @@ footer {
     transform: rotate(720deg);
     transition: transform 5s ease-in-out;
 }
+
+.beast {
+    background-image: url("/images/beast.gif");
+}

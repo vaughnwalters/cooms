@@ -32,7 +32,8 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<script src="/js/background.js"></script>
+<!--<script src="/js/background.js"></script>-->
+<script src="/js/beast.js"></script>
 
 </body>
 
