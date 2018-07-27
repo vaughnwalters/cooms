@@ -27,7 +27,7 @@
                 if($page == "" || $page == 1) {
                     $page_1 = 0;
                 } else {
-                    $page_1 = ($page * 5) - 5;
+                    $page_1 = ($page * 8) - 8;
                 }
 
 
@@ -36,7 +36,7 @@
                 $count = mysqli_num_rows($find_count);
 
 
-                $count = ceil($count / 5);
+                $count = ceil($count / 8);
 
 //                echo "$find_count";
 //                echo " ";
@@ -44,7 +44,7 @@
 
 
 
-                $query = "SELECT * FROM posts LIMIT $page_1, 5 ";
+                $query = "SELECT * FROM posts ORDER BY post_id DESC LIMIT $page_1, 8 ";
 //                $query = "SELECT * FROM posts ORDER BY post_id DESC";
 
                 $select_all_posts_query = mysqli_query($connection, $query);

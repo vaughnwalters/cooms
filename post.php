@@ -135,7 +135,7 @@
 
 
                     <div class="form-group">
-                        <label for="Author">Author</label>
+                        <label for="Author">What's Yer Name?</label>
                         <input type="text" class="form-control" name="comment_author">
                     </div>
 
