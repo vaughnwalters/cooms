@@ -19,7 +19,7 @@
                 <?php
 
                 if(isset($_GET['page'])) {
-                    $page = $_GET['page'];
+                    $page = mysqli_real_escape_string($connection, trim($_GET['page']));
                 } else {
                     $page = "";
                 }

@@ -24,7 +24,7 @@ function insert_categories(){
     global $connection;
 
     if(isset($_POST['submit'])) {
-        $cat_title = $_POST['cat_title'];
+        $cat_title = escape($_POST['cat_title']);
 
         if ($cat_title == "" || empty($cat_title)) {
             echo "this field should not be empty";
@@ -69,7 +69,7 @@ function delete_categories() {
 
     global $connection;
     if(isset($_GET['delete'])) {
-        $the_cat_id = $_GET['delete'];
+        $the_cat_id = escape($_GET['delete']);
         $query = "DELETE FROM categories WHERE cat_id = {$the_cat_id}";
         $delete_query = mysqli_query($connection, $query);
 //      this header function will refresh the page
