@@ -6,6 +6,53 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: Courier;
+    background: #222222;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label, button, input {
+    color: #55F72E !important;
+    background: transparent !important;
+}
+
+.icon-bar {
+    background-color: #55F72E !important
+}
+
+.well {
+    background: #222222 !important;
+    border: 1px solid #55F72E;
+}
+
+.well, input, textarea, button, .btn-primary {
+    border-radius: 0 !important;
+}
+
+hr {
+    border-top: 1px solid #55F72E;
+}
+
+button, .btn-primary {
+    background: #222222 !important;
+    border-color: #55F72E !important;
+}
+
+.form-control {
+    background-color: #222222;
+    border-color: #55F72E;
+    box-sizing: border-box;
+}
+
+.form-control:active, .form-control:focus {
+    border: 2px solid #55F72E!important;
+    box-sizing: border-box;
+}
+
+.pager li>a {
+    border: 1px solid #55F72E;
+    margin: 0 3px;
+    padding: 2px 7px;
+    border-radius: 0;
 }
 
 footer {

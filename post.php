@@ -149,7 +149,7 @@
                         <textarea name="comment_content" class="form-control" rows="3"></textarea>
                     </div>
 
-                    <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="create_comment" class="btn">Submit</button>
                 </form>
             </div>
 
