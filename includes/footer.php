@@ -1,10 +1,13 @@
-<footer class="col-md-8">
-    <div class="row">
-        <div class="col-sm-6">
-            <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> ® <?php echo date("Y"); ?> ™</p>
-        </div>
+<footer class="col-md-12">
+    <div class="row footer-wrapper">
+<!--        <div class="col-sm-6">-->
+<!--            <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> ® --><?php //echo date("Y"); ?><!-- ™</p>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-6">-->
+        <div class="col-sm-12">
 
-        <div class="col-sm-6">
+            <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top"><i class="fa fa-envelope"> </i></a>
 
             <a href="https://github.com/vaughnwalters"><i class="fa fa-github"> </i></a>
 

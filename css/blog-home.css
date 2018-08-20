@@ -10,7 +10,7 @@ body {
     background: #222222;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, label, button, input {
+h1, h2, h3, h4, h5, h6, p, a, label, button, input, textarea {
     color: #55F72E !important;
     background: transparent !important;
 }
@@ -35,6 +35,11 @@ hr {
 button, .btn-primary {
     background: #222222 !important;
     border-color: #55F72E !important;
+
+}
+
+.btn:focus, button:focus {
+    outline: 5px auto #55F72E !important;
 }
 
 .form-control {
@@ -72,4 +77,8 @@ footer {
 
 .beast {
     background-image: url("/images/beast.gif");
+}
+
+.footer-wrapper {
+    text-align: center;
 }

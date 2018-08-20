@@ -107,8 +107,8 @@
                 if(!$create_comment_query) {
                     die('QUERY FAILED' . mysqli_error($connection));
                 } else {
-                    echo "Comment Received.  I'll have to approve it before it shows up here.";
-                    echo "'Only God Can Judge Me' - Tupac";
+                    echo "<p>Comment Received.  I'll have to approve it before it shows up here.</p>";
+                    echo "'<p>Only God Can Judge Me' - Tupac</p>";
                 }
 
                 $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 ";
