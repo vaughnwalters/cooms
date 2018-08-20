@@ -663,6 +663,6 @@ window.onload = function() {
 
 
 
-console.log("%c type the number %c-rw-rw-rw- %cin the browser window", "line-height: 3rem; font-family: courier; background: #222; color: #55F72E; font-size: 15px; padding-left: 1rem;", "font-family: courier; line-height: 3rem; background: #222; font-weight: 900; color: red; font-size: 15px; text-shadow: 1px 1px 0px #55F72E, 1px -1px 0px #55F72E, -1px 1px 0px #55F72E, -1px -1px 0px #55F72E,", "font-family: courier; background: #222; color: #55F72E; line-height: 3rem; font-size: 15px; padding-right: 2rem;");
+console.log("%c type the number %c-rw-rw-rw- %cin the browser window", "line-height: 7rem; font-family: courier; background: #222; color: #55F72E; font-size: 30px; padding-left: 1rem;", "font-family: courier; line-height: 7rem; background: #222; font-weight: 900; color: red; font-size: 30px; text-shadow: 1px 1px 0px #55F72E, 1px -1px 0px #55F72E, -1px 1px 0px #55F72E, -1px -1px 0px #55F72E;", "font-family: courier; background: #222; color: #55F72E; line-height: 7rem; font-size: 30px; padding-right: 2rem;");
 
 };
