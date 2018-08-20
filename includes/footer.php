@@ -37,6 +37,7 @@
 
 <!--<script src="/js/background.js"></script>-->
 <script src="/js/beast.js"></script>
+<script src="/js/typer.js"></script>
 
 </body>
 
