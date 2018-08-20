@@ -82,3 +82,7 @@ footer {
 .footer-wrapper {
     text-align: center;
 }
+
+i {
+    padding: 0.5rem;
+}
