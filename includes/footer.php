@@ -15,6 +15,8 @@
 
             <a href="https://open.spotify.com/artist/3d9s7s6CPO2s9dRfWng6F1?si=-C8WL95CQ_6v6oXpRaVImQ"><i class="fa fa-spotify fa-lg"></i></a>
 
+            <a href="https://www.twitter.com/cheataqua/"><i class="fa fa-twitter fa-lg"></i></a>
+
             <a href="https://www.instagram.com/cheataqua/"><i class="fa fa-instagram fa-lg"></i></a>
 
         </div>
