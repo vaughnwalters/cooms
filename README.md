@@ -16,3 +16,4 @@ A PHP CMS based on Edwin Diaz's tutorial on Udemy.  It's still under constructio
  - if no image selected, doesn't correctly save any post updates in admin panel
  - if post is not set to published in admin, it still counts it as existing, pertaining to index page pagination
  - add https://steven.codes/typerjs/ cause it's fun
+ - add elipsis for truncated text on homepage entry excerpts
