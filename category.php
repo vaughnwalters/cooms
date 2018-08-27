@@ -27,13 +27,20 @@
 
 //                TODO - FLESH THIS OUT MORE to customize content at top of each category page, maybe base it on the switch statement in posts.php
                 if($post_category_id == 0) {
-                    echo "DEV";
+//                    echo "DEV";
+                    ?><!-- Typer-->
+                <p>dev@vaughnwalters.com:~$
+      <span class="typer" data-words="Suuuuuup. Welcome to the dev nerd portion of the site.  Built with a homespun CMS called Cooms. You can find it on my github repo."
+            data-colors="#55F72E" data-delay="69"></span>
+                    <span class="cursor" data-cursorDisplay="▌" data-owner="second-id"></span>
+                </p><?php
+
                 } elseif ( $post_category_id == 1 ) {
-                    echo "MUSIC";
+//                    echo "MUSIC";
                 } elseif ( $post_category_id == 2 ) {
-                    echo "GRUB";
+//                    echo "GRUB";
                 } elseif ( $post_category_id == 3 ) {
-                    echo "SOCIALITE";
+//                    echo "SOCIALITE";
                 }
 
 

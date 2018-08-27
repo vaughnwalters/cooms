@@ -13,8 +13,13 @@
             <!-- Blog Entries Column -->
 
             <div class="col-md-8">
-
-                <h1>SUUUUP.</h1>
+                <!-- Typer-->
+                <p>yo@vaughnwalters.com:~$
+                    <span class="typer" data-words="Suuuuuuuuuuup"
+            data-colors="#55F72E" data-delay="100"></span>
+                    <span class="cursor" data-cursorDisplay="▌" data-owner="second-id"></span>
+                </p>
+                <hr>
 
                 <?php
 
@@ -74,7 +79,9 @@
                         <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
                     </h2>
                     <p class="lead">
+                        <?php if($post_author != '') { ?>
                         by <a href="author_posts.php?author=<?php echo $post_author ?>&p_id=<?php echo $post_id; ?>"><?php echo $post_author ?></a>
+                        <?php } ?>
                     </p>
                     <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date ?></p>
                     <a href="post.php?p_id=<?php echo $post_id; ?>">
