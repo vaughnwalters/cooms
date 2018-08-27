@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p, a, label, button, input, textarea {
 }
 
 .well {
-    background: #222 !important;
+    background: #111 !important;
     border: 1px solid #55F72E;
 }
 
@@ -48,7 +48,7 @@ button, .btn-primary {
 }
 
 .form-control {
-    background-color: #222;
+    background-color: #111;
     border-color: #55F72E;
     box-sizing: border-box;
 }
@@ -93,5 +93,5 @@ i {
 }
 
 .navbar {
-    background: #222;
+    background: #111;
 }
