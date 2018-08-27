@@ -7,7 +7,11 @@
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: Courier;
-    background: #222222;
+    background: #000;
+}
+
+a {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, label, button, input, textarea {
@@ -20,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p, a, label, button, input, textarea {
 }
 
 .well {
-    background: #222222 !important;
+    background: #000000 !important;
     border: 1px solid #55F72E;
 }
 
@@ -33,8 +37,9 @@ hr {
 }
 
 button, .btn-primary {
-    background: #222222 !important;
+    background: #000000 !important;
     border-color: #55F72E !important;
+    text-decoration: none;
 
 }
 
@@ -43,7 +48,7 @@ button, .btn-primary {
 }
 
 .form-control {
-    background-color: #222222;
+    background-color: #000000;
     border-color: #55F72E;
     box-sizing: border-box;
 }
@@ -85,4 +90,8 @@ footer {
 
 i {
     padding: 0.5rem;
+}
+
+.navbar {
+    background: #000000;
 }
