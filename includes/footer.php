@@ -29,9 +29,7 @@
 <!-- /.container -->
 
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.0.0.min.js
-
-"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
