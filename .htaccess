@@ -20,7 +20,6 @@
 # Option 1: rewrite www.example.com → example.com
 
 <IfModule mod_rewrite.c>
-    RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.vaughnwalters\.com$ [NC]
     RewriteRule ^ https://vaughnwalters\.com%{REQUEST_URI} [R=301,L]
 
