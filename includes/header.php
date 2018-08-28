@@ -8,8 +8,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Vaughn Walters">
+    <meta name="description" content="This is the homepage for Vaughn Walters.  Web developer, musician, veggie cook, and most importanly socialite.">
+    <meta name="keywords" content="development, music, food, socialite, vaughn walters, nashville, west virginia, black metal, country music">
+    <meta name="robots" content="all">
 
     <title>vaughn@walters:~$</title>
 
