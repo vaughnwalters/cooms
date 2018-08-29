@@ -20,26 +20,14 @@ if(isset($_SESSION['username'])) {
     }
 }
 
-
-
 if(isset($_POST['edit_user'])) {
 
-//    $user_id = $_POST['user_id'];
     $user_firstname = escape($_POST['user_firstname']);
     $user_lastname = escape($_POST['user_lastname']);
     $user_role = escape($_POST['user_role']);
-
-//    $post_image = $_FILES['image']['name'];
-//    $post_image_temp = $_FILES['image']['tmp_name'];
-
     $username = escape($_POST['username']);
     $user_email = escape($_POST['user_email']);
     $user_password = escape($_POST['user_password']);
-//    $post_date = date('d-m-y');
-
-
-
-
 
     $query = "UPDATE users SET ";
     $query .= "user_firstname = '{$user_firstname}', ";
@@ -48,23 +36,14 @@ if(isset($_POST['edit_user'])) {
     $query .= "username = '{$username}', ";
     $query .= "user_email = '{$user_email}', ";
     $query .= "user_password   = '{$user_password}' ";
-
     $query .= "WHERE username = '{$username}' ";
-
 
     $edit_user_query = mysqli_query($connection, $query);
 
     confirmQuery($edit_user_query);
-
-
 }
 
-
 ?>
-
-
-
-
 <div id="wrapper">
 
     <?php include "includes/admin_navigation.php" ?>
@@ -81,22 +60,7 @@ if(isset($_POST['edit_user'])) {
                         <small>Author</small>
                     </h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <form action="" method="post" enctype="multipart/form-data">
-                        <!--enctype multipart/form-data is used here because we are sending multiple types of data in the form, in this example, a file upload as well as plain text-->
-
                         <div class="form-group">
                             <label for="title">Firstname</label>
                             <input type="text" value="<?php echo $user_firstname ?>" class="form-control" name="user_firstname">
@@ -113,17 +77,11 @@ if(isset($_POST['edit_user'])) {
                                 <option value="subscriber"><?php echo $user_role; ?></option>
 
                                 <?php
-
                                 if($user_role == 'admin') {
-
                                     echo "<option value='subscriber'>Subscriber</option>";
-
                                 } else {
-
                                     echo "<option value='admin'>Admin</option>";
                                 }
-
-
                                 ?>
 
                             </select>

@@ -1,10 +1,5 @@
 <footer class="col-md-12">
     <div class="row footer-wrapper">
-<!--        <div class="col-sm-6">-->
-<!--            <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> ® --><?php //echo date("Y"); ?><!-- ™</p>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="col-sm-6">-->
         <div class="col-sm-12">
 
             <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top"><i class="fa fa-envelope fa-lg"> </i></a>
@@ -20,6 +15,13 @@
             <a href="https://www.instagram.com/cheataqua/"><i class="fa fa-instagram fa-lg"></i></a>
 
         </div>
+<!---->
+<!--    <div class="row footer-wrapper">-->
+<!--        <div class="col-sm-12">-->
+<!--            <p>&copy; <a href="mailto:vaughnwalters@gmail.com?Subject=sup" target="_top">Vaughn Walters</a> ® --><?php //echo date("Y"); ?><!-- ™</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
@@ -34,7 +36,6 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<!--<script src="/js/background.js"></script>-->
 <script src="/js/beast.js"></script>
 <script src="/js/typer.js"></script>
 

@@ -1,15 +1,10 @@
 <?php include "includes/header.php"; ?>
 <?php include "includes/db.php"; ?>
-
 <!-- Navigation -->
 <?php include "includes/navigation.php"; ?>
-
-
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-
             <!-- Blog Entries Column -->
 
             <div class="col-md-8">
@@ -35,22 +30,13 @@
                     $page_1 = ($page * 8) - 8;
                 }
 
-
                 $post_query_count = "SELECT * FROM posts";
                 $find_count = mysqli_query($connection, $post_query_count);
                 $count = mysqli_num_rows($find_count);
 
-
                 $count = ceil($count / 8);
 
-//                echo "$find_count";
-//                echo " ";
-
-
-
-
                 $query = "SELECT * FROM posts ORDER BY post_id DESC LIMIT $page_1, 8 ";
-//                $query = "SELECT * FROM posts ORDER BY post_id DESC";
 
                 $select_all_posts_query = mysqli_query($connection, $query);
 
@@ -65,16 +51,8 @@
 
                     if($post_status == 'published') {
 
-
-
-
                     ?>
-
-
-
-
                     <!-- Blog Post -->
-
                     <h2>
                         <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
                     </h2>
@@ -106,7 +84,6 @@
 
                 <?php } }?>
 
-
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
@@ -125,18 +102,7 @@
 
             ?>
 
-
-
-<!--            <li><a href="">1</a></li>-->
-
-
-
         </ul>
-
 
 <!-- Footer -->
 <?php include "includes/footer.php"; ?>
-
-
-
-

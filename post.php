@@ -4,7 +4,6 @@
 <!-- Navigation -->
 <?php include "includes/navigation.php"; ?>
 
-
 <!-- Page Content -->
 <div class="container">
 
@@ -17,9 +16,6 @@
             <?php
 
             if(isset($_GET['p_id'])) {
-
-
-
 
                 $post_id = mysqli_real_escape_string($connection, trim($_GET['p_id']));
 
@@ -40,13 +36,6 @@
 
                     ?>
 
-
-                    <!--                <h1 class="page-header">-->
-                    <!--                    Page Heading-->
-                    <!--                    <small>Secondary Text</small>-->
-                    <!--                </h1>-->
-
-                    <!-- First Blog Post -->
                     <h2>
                         <a href="#"><?php echo $post_title ?></a>
                     </h2>
@@ -70,15 +59,8 @@
 
             }
             ?>
-
-
-
-<!--            mysqli_real_escape_string($connection, trim($string));-->
-
             <!-- Blog Comments -->
-
 <!--            when form submits, the_post_id will get the p_id from the URL with the GET superglobal , the form that is submitted will have post fields, and then assign -->
-
 
             <?php
 
@@ -89,15 +71,10 @@
                 $comment_author = $_POST['comment_author'];
                 $comment_email = $_POST['comment_email'];
                 $comment_content = $_POST['comment_content'];
-
                 $the_post_id = mysqli_real_escape_string($connection, trim($_GET['p_id']));
-
                 $comment_author = mysqli_real_escape_string($connection, trim($_POST['comment_author']));
                 $comment_email = mysqli_real_escape_string($connection, trim($_POST['comment_email']));
                 $comment_content = mysqli_real_escape_string($connection, trim($_POST['comment_content']));
-
-
-
                 $query = "INSERT INTO comments (comment_post_id, comment_author, comment_email, comment_content, comment_status, comment_date) ";
 
                 $query .= "VALUES ($the_post_id, '{$comment_author}', '{$comment_email}', '{$comment_content}', 'unapproved', now())";
@@ -115,18 +92,8 @@
                 $query .= "WHERE post_id={$the_post_id} ";
 
                 $update_comment_count = mysqli_query($connection, $query);
-
-
-
-
             }
-
-
             ?>
-
-
-
-
 
             <!-- Comments Form -->
             <div class="well">
@@ -157,11 +124,7 @@
 
             <!-- Posted Comments -->
             <?php
-
-
-//            hmm, make this global or scoped to this page?  or just redefine it?
             $the_post_id = $_GET['p_id'];
-
             $query = "SELECT * FROM comments WHERE comment_post_id = {$the_post_id} ";
             $query .= "AND comment_status = 'approved' ";
             $query .= "ORDER BY comment_id DESC ";
@@ -175,9 +138,6 @@
                 $comment_author = $row['comment_author'];
 
             ?>
-
-
-
             <!-- Comment -->
             <div class="media">
                 <a class="pull-left" href="#">
@@ -191,29 +151,8 @@
 
                 </div>
             </div>
-
-
-
-
-
-
             <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
         </div>
-<!---->
-<!--        <!-- Blog Sidebar Widgets Column -->
-<!--        --><?php //include "includes/sidebar.php"; ?>
-
     </div>
     <!-- /.row -->
 

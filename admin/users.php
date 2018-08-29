@@ -45,15 +45,8 @@
 
                             include "includes/view_all_users.php";
                             break;
-
                     }
-
                     ?>
-
-
-
-
-
                 </div>
             </div>
             <!-- /.row -->

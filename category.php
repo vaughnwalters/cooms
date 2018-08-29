@@ -22,9 +22,6 @@
 
                 }
 
-
-
-
 //                TODO - FLESH THIS OUT MORE to customize content at top of each category page, maybe base it on the switch statement in posts.php
                 if($post_category_id == 0) {
 //                    echo "DEV";
@@ -60,19 +57,6 @@
                     $post_content = substr($row['post_content'], 0,100);
 
                     ?>
-
-
-
-
-<!--                    <h1 class="page-header">-->
-<!--                        Page Heading-->
-<!--                        <small>Secondary Text</small>-->
-<!--                    </h1>-->
-
-                    <!-- First Blog Post -->
-
-
-
                     <h2>
                         <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
                     </h2>

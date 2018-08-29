@@ -2,15 +2,7 @@
 <?php include "includes/db.php"; ?>
 
 <!-- Navigation -->
-
-
-
 <div class="col-md-4">
-
-
-
-
-
 
     <!-- Login -->
     <div class="well">
@@ -31,16 +23,7 @@
         <!-- /.input-group -->
     </div>
 
-
-
-
-
-
-
-
-
 </div>
-
 <!-- Footer -->
 <?php //include "includes/footer.php"; ?>
 

@@ -6,9 +6,6 @@ function escape($string) {
 
 }
 
-
-
-
 function confirmQuery($result){
 
     global $connection;
@@ -16,7 +13,6 @@ function confirmQuery($result){
     if(!$result ) {
         die("QUERY FAILED" . mysqli_error($connection) );
     }
-
 }
 
 function insert_categories(){
@@ -76,6 +72,5 @@ function delete_categories() {
         header("Location: categories.php");
     }
 }
-
 
 ?>
